@@ -2,14 +2,14 @@
   "name": "bouyomichan-mcp-nodejs",
   "version": "1.0.0",
   "description": "棒読みちゃんをMCPサーバーとして実装したNode.js版",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node build/index.js"
   },
   "bin": {
-    "bouyomichan-mcp-nodejs": "dist/index.js"
+    "bouyomichan-mcp-nodejs": "build/index.js"
   },
   "files":[
     "dist"
