@@ -11,9 +11,9 @@
   "bin": {
     "bouyomichan-mcp-nodejs": "dist/index.js"
   },
-  "files":{
+  "files":[
     "dist"
-  },
+  ],
   "keywords": [
     "mcp",
     "bouyomichan",
