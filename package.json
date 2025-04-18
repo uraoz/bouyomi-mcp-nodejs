@@ -9,7 +9,7 @@
     "start": "node build/index.js"
   },
   "bin": {
-    "bouyomichan-mcp-nodejs": "node build/index.js"
+    "bouyomichan-mcp-nodejs": "build/index.js"
   },
   "files":[
     "dist"
