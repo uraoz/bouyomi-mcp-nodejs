@@ -8,6 +8,9 @@
     "build": "tsc",
     "start": "node build/index.js"
   },
+  "bin": {
+    "bouyomichan-mcp-nodejs": "build/index.js"
+  },
   "keywords": [
     "mcp",
     "bouyomichan",
