@@ -26,7 +26,7 @@ Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくり
 1. このリポジトリをクローンします：
 
 ```bash
-git clone https://github.com/あなたのユーザー名/bouyomichan-mcp-nodejs.git
+git clone https://github.com/uraoz/bouyomichan-mcp-nodejs.git
 cd bouyomichan-mcp-nodejs
 ```
 
