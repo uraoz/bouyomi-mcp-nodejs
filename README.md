@@ -8,7 +8,7 @@ Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくり
 
 ## 概要
 
-このサーバーは、Claude などのAIアシスタントから「棒読みちゃん」の読み上げ機能を利用できるようにするMCPサーバーです。AIモデルが理解しやすいインターフェースを提供し、テキストを音声に変換する機能を実現します。
+このサーバーは、Claude などのAIアシスタントから棒読みちゃんを利用できるようにするMCPサーバーです
 
 ## 機能
 
@@ -23,7 +23,7 @@ Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくり
 - Node.js 16以上
 - npm 7以上
 - 棒読みちゃんがインストールされていること
-- 棒読みちゃんがポート50080で起動していること
+- 棒読みちゃんのHTTP連携がポート50080で起動していること
 
 ## インストール方法
 
@@ -100,20 +100,3 @@ Claude for Desktopで以下のように指示すると、テキストが音声�
 ## ライセンス
 
 MIT
-
-## 貢献方法
-
-1. このリポジトリをフォークします
-2. 機能追加やバグ修正用のブランチを作成します：`git checkout -b feature/amazing-feature`
-3. 変更をコミットします：`git commit -m 'Add some amazing feature'`
-4. リモートブランチにプッシュします：`git push origin feature/amazing-feature`
-5. プルリクエストを作成します
-
-## 謝辞
-
-- [棒読みちゃん](https://chi.usamimi.info/Program/Application/BouyomiChan/)の開発者様
-- [Model Context Protocol](https://modelcontextprotocol.io/)の開発チーム
-
----
-
-このMCPサーバーを使って、AIアシスタントに音声読み上げ機能を追加してみてください！質問やフィードバックがあれば、Issuesで報告してください。
