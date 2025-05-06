@@ -76,16 +76,11 @@ server.tool(
 
 // メイン関数
 async function main() {
-  console.log("棒読みちゃんMCPサーバーを起動しています...");
-  console.log("このサーバーは読み上げ機能をAIモデルに提供します");
-  console.log("棒読みちゃんが起動していることを確認してください（ポート：50080）");
   
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("MCP Server running on stdio");
 }
 
 main().catch((error) => {
-  console.error("エラーが発生しました:", error);
   process.exit(1);
 });
