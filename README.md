@@ -25,32 +25,15 @@ Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくり
 - 棒読みちゃんがインストールされていること
 - 棒読みちゃんのHTTP連携がポート50080で起動していること
 
-## インストール方法
-
-1. このリポジトリをクローンします：
-
-```bash
-git clone https://github.com/uraoz/bouyomichan-mcp-nodejs.git
-cd bouyomichan-mcp-nodejs
-```
-
-2. 依存関係をインストールします：
-
-```bash
-npm install
-```
-
-3. コンパイルします：
-
-```bash
-npm run build
-```
-
 ## 使用方法
 
 ### サーバーの起動
 
 ```bash
+git clone https://github.com/uraoz/bouyomichan-mcp-nodejs.git
+cd bouyomichan-mcp-nodejs
+npm install
+npm run build
 npm start
 ```
 
