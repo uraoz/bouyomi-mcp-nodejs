@@ -25,67 +25,33 @@ Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくり
 - 棒読みちゃんがインストールされていること
 - 棒読みちゃんのHTTP連携がポート50080で起動していること
 
-## インストール方法
-
-1. このリポジトリをクローンします：
-
-```bash
-git clone https://github.com/uraoz/bouyomichan-mcp-nodejs.git
-cd bouyomichan-mcp-nodejs
-```
-
-2. 依存関係をインストールします：
-
-```bash
-npm install
-```
-
-3. コンパイルします：
-
-```bash
-npm run build
-```
-
 ## 使用方法
 
 ### サーバーの起動
 
 ```bash
+git clone https://github.com/uraoz/bouyomichan-mcp-nodejs.git
+cd bouyomichan-mcp-nodejs
+npm install
+npm run build
 npm start
 ```
 
 ### Claude for Desktopとの連携
 
-Claude for Desktopと連携するには、設定ファイルを編集する必要があります：
-
-1. Claude for Desktop設定ファイルを開きます：
-   - MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
-   - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
-
-2. 以下の内容を追加します（パスは実際のファイルパスに置き換えてください）：
-
 ```json
 {
   "mcpServers": {
-    "bouyomi": {
-      "command": "node",
+    "bouyomichan":{
+      "command": "npx",
       "args": [
-        "/絶対パス/bouyomichan-mcp-nodejs/build/index.js"
+        "-y",
+        "github:uraoz/bouyomichan-mcp-nodejs"
       ]
     }
   }
 }
 ```
-
-3. Claude for Desktopを再起動します。
-
-## 使用例
-
-Claude for Desktopで以下のように指示すると、テキストが音声で読み上げられます：
-
-- 「こんにちは、世界」と読み上げて
-- 男性の声で「これはテストです」と読み上げて
-- 速度を速くして「急いでいます」と読み上げて
 
 ## パラメータ説明
 
