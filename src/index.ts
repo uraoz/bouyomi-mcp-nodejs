@@ -31,7 +31,7 @@ async function speakBouyomi(
 
 // MCPサーバーの作成
 const server = new McpServer({
-  name: "bouyomi-server",
+  name: "bouyomichan-mcp-nodejs",
   version: "1.0.0",
   capabilities: {
     tools: {}
