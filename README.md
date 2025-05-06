@@ -56,28 +56,20 @@ npm start
 
 ### Claude for Desktopとの連携
 
-Claude for Desktopと連携するには、設定ファイルを編集する必要があります：
-
-1. Claude for Desktop設定ファイルを開きます：
-   - MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
-   - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
-
-2. 以下の内容を追加します（パスは実際のファイルパスに置き換えてください）：
 
 ```json
 {
   "mcpServers": {
-    "bouyomi": {
-      "command": "node",
+    "bouyomichan":{
+      "command": "npx",
       "args": [
-        "/絶対パス/bouyomichan-mcp-nodejs/build/index.js"
+        "-y",
+        "github:uraoz/bouyomichan-mcp-nodejs"
       ]
     }
   }
 }
 ```
-
-3. Claude for Desktopを再起動します。
 
 ## 使用例
 
