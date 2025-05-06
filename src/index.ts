@@ -77,9 +77,10 @@ server.tool(
 
 // メイン関数
 async function main() {
-  
+  console.error("棒読みちゃんMCPサーバーを起動しています...");
   const transport = new StdioServerTransport();
   await server.connect(transport);
+  console.error("MCP Server running on stdio");
 }
 
 main().catch((error) => {
