@@ -57,7 +57,7 @@ server.tool(
         content: [
           {
             type: "text",
-            text: `「${text}」を音声で読み上げました。(音声: ${voice}, 音量: ${volume}, 速度: ${speed}, 音程: ${tone})`
+            text: `読み上げました`
           }
         ]
       };

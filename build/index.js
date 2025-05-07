@@ -24,7 +24,7 @@ async function speakBouyomi(text = 'ゆっくりしていってね', voice = 0, 
 }
 // MCPサーバーの作成
 const server = new McpServer({
-    name: "bouyomi-server",
+    name: "bouyomichan-mcp-nodejs",
     version: "1.0.0",
     capabilities: {
         tools: {}
@@ -44,7 +44,7 @@ server.tool("read_text", "テキストを棒読みちゃんで読み上げます
             content: [
                 {
                     type: "text",
-                    text: `「${text}」を音声で読み上げました。(音声: ${voice}, 音量: ${volume}, 速度: ${speed}, 音程: ${tone})`
+                    text: `読み上げました`
                 }
             ]
         };
@@ -63,8 +63,10 @@ server.tool("read_text", "テキストを棒読みちゃんで読み上げます
 });
 // メイン関数
 async function main() {
+    console.error("棒読みちゃんMCPサーバーを起動しています...");
     const transport = new StdioServerTransport();
     await server.connect(transport);
+    console.error("MCP Server running on stdio");
 }
 main().catch((error) => {
     process.exit(1);
