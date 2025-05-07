@@ -1,22 +1,9 @@
 # 棒読みちゃんMCPサーバー (Node.js版)
 
-Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくりボイス）による音声読み上げ機能をAIアシスタントに提供するサーバーです。Node.js/TypeScriptで実装されています。
-
 <a href="https://glama.ai/mcp/servers/@uraoz/bouyomi-mcp-nodejs">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@uraoz/bouyomi-mcp-nodejs/badge" alt="Bouyomi-chan Server MCP server" />
 </a>
 
-## 概要
-
-このサーバーは、Claude などのAIアシスタントから棒読みちゃんを利用できるようにするMCPサーバーです
-
-## 機能
-
-- テキスト読み上げ
-- 音声タイプ選択（女性・男性など）
-- 音量調整
-- 読み上げ速度調整
-- 音程調整
 
 ## 前提条件
 
@@ -27,7 +14,7 @@ Model Context Protocol (MCP) を使用して、棒読みちゃん（ゆっくり
 
 ## 使用方法
 
-### サーバーの起動
+### ローカルでのサーバーの起動
 
 ```bash
 git clone https://github.com/uraoz/bouyomichan-mcp-nodejs.git
