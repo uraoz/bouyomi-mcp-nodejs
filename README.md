@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/uraoz-bouyomichan-mcp-nodejs-badge.png)](https://mseep.ai/app/uraoz-bouyomichan-mcp-nodejs)
+
 # 棒読みちゃんMCPサーバー (Node.js版)
 
 <a href="https://glama.ai/mcp/servers/@uraoz/bouyomi-mcp-nodejs">
